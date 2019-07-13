@@ -70,7 +70,7 @@ class HellowViewSet(viewsets.ViewSet):
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def retrieve(self, request, pk=None):
+    def retrieve(self, request, pk=None): 
         """Handle getting an object by id"""
         return Response({'http_method': 'GET'})
 
